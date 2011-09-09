@@ -7,6 +7,7 @@
     comment block v2
     */
 
+var lineEndingTest=1;
 var thisDoc=app.activeDocument;
 var thisLayer=thisDoc.activeLayer;
 var thisSelection=thisDoc.selection;
