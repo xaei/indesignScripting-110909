@@ -1,4 +1,4 @@
-﻿/*
+/*
     frame to grid
     version 0.1
     (c) 2011 alexander maly 
@@ -17,8 +17,12 @@ var gridYDim = thisDoc.gridPreferences.verticalGridlineDivision;
 
 if (thisSelection.length>0){
     for (var i=0;i<thisSelection.length;i++){
-//        workingObject=thisSelection[i].duplicate(); // for testing
+            //workingObject=thisSelection[i].duplicate(); // for testing
             workingObject=thisSelection[i];
+            //get type of workingObject
+            //if text, put on layer 'text'
+            //if graphics, put on layer 'graphics'
+            //
             workingPaths=workingObject.paths;
             for(var j=0;j<workingPaths.length;j++){
                 workingPoints=workingPaths[j].pathPoints;
